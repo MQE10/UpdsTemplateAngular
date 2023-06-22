@@ -39,11 +39,28 @@
                 "bundleName": "dark-indigo",
                 "inject": false
               }
-              
             ],
             "scripts": []
           },
           "configurations": {
+            "u.dev": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/u.dev.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "u.qa": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/u.qa.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
             "production": {
               "budgets": [
                 {
@@ -79,6 +96,12 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
+            "u.qa": {
+              "browserTarget": "LineaGraficaUPDS-Angular-PrimeNG:build:u.qa"
+            },
+            "u.dev": {
+              "browserTarget": "LineaGraficaUPDS-Angular-PrimeNG:build:u.dev"
+            },
             "production": {
               "browserTarget": "LineaGraficaUPDS-Angular-PrimeNG:build:production"
             },
