@@ -11,6 +11,7 @@ export const environment = {
   urlFile: 'https://portal.upds.edu.bo/gapi/upload/uploadasynccontainer/portal-notificacion',
   endPointAccess: "https://portal.upds.edu.bo/gapi/request/service/?path=access/api/",
   endPointPortal: "http://172.16.248.33:8300/Portal/api/",
+  apikey: "5SJE8rmwaw4rKz",
   objModNotificaciones: {
     id: 34002,
     nombre: "Noticias",
